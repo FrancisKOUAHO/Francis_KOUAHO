@@ -1,26 +1,45 @@
 import "../assets/styles/Bio.css"
-import {Animator, batch, FadeIn, StickyIn} from "react-scroll-motion";
+import {gsap} from "gsap";
+import {ScrollTrigger} from "gsap/ScrollTrigger";
+import {useEffect, useRef} from "react";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Bio = () => {
+
+    const AnimateScrollingBio = useRef(null)
+
+    useEffect(() => {
+        gsap.to(AnimateScrollingBio.current, {
+            scrollTrigger: {
+                scrub: 1,
+                trigger: AnimateScrollingBio.current,
+                start: "-200% top",
+                onEnter: () => console.log('Enter'),
+                onLeave: () => console.log('Leave'),
+                onEnterBack: () => console.log('Enter back'),
+                onLeaveBack: () => console.log('All the way back'),
+                //markers: "true"
+            },
+            duration: 1,
+            bottom: 300
+        })
+    })
+
     return (
-        <Animator animation={batch(FadeIn(), StickyIn())}>
-            <section className="bio">
-                <p>
-                    Developpeur Front-End basé à Paris, 4 ans d’expérience. Passionné de nouvelles technologies, à
-                    travers
-                    mes divers codes, j'exprime ma créativité. Développer un outil, un site web ou même un jeu à partir
-                    de
-                    rien me fascine. Avec seulement des lignes de code (et quelques compétences), on peut arriver à un
-                    résultat incroyable.
-                </p>
-                <p style={{marginLeft: "1rem"}}>
-                    C'est pourquoi je développe dans différents langages: le web (HTML, CSS & PHP), le
-                    Python et le JavaScript (VueJS, NuxtJS & NodeJS) afin de créer ce que je souhaite.
-                    Toujours à la recherche de la réponse à la question suivante, comment créer des expériences que les
-                    gens aiment ?
-                </p>
-            </section>
-        </Animator>
+        <section className="bio" ref={AnimateScrollingBio}>
+            <p>
+                Développeur Front-End basé à Paris, 4 ans d’expérience. Passionné de nouvelles technologies, à
+                travers ma créativité. Avec seulement des lignes de code (et quelques compétences), on peut arriver à
+                des
+                résultats incroyables.
+            </p>
+            <p style={{marginLeft: "1rem"}}>
+                C'est pourquoi je développe dans différents langages: le web (HTML, CSS), JavaScript (VueJS, NuxtJS &
+                NodeJS) afin de créer ce que je souhaite.
+                Comment créer des expériences que les gens aiment ?
+            </p>
+        </section>
     )
 }
 

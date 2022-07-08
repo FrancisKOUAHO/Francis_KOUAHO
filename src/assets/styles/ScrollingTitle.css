@@ -13,7 +13,6 @@
     white-space: nowrap;
     -ms-flex-item-align: start;
     align-self: flex-start;
-    position: relative;
     bottom: 13rem;
 }
 

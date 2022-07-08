@@ -16,14 +16,15 @@ const ScrollingTitle = () => {
             scrollTrigger: {
                 scrub: 1,
                 trigger: AnimateScrollingTitle.current,
-                start: "70% bottom",
+                start: "90% bottom",
                 onEnter: () => console.log('Enter'),
                 onLeave: () => console.log('Leave'),
                 onEnterBack: () => console.log('Enter back'),
                 onLeaveBack: () => console.log('All the way back'),
-                marker: true
+                //markers: "true"
             },
-            top: 200
+            duration: 10,
+            bottom: 100
         })
     }, []);
 
