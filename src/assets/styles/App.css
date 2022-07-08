@@ -1,0 +1,172 @@
+@import url("https://p.typekit.net/p.css?s=1&k=dfb6pzn&ht=tk&f=18438.18441.18445.31663&a=23293373&app=typekit&e=css");
+
+@font-face {
+    font-family: "azo-sans-web";
+    src: url("https://use.typekit.net/af/9aa4fe/000000000000000000013f4e/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"), url("https://use.typekit.net/af/9aa4fe/000000000000000000013f4e/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"), url("https://use.typekit.net/af/9aa4fe/000000000000000000013f4e/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+    font-display: auto;
+    font-style: normal;
+    font-weight: 700;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: "azo-sans-web";
+    src: url("https://use.typekit.net/af/7a7e75/00000000000000003b9afbb9/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff2"), url("https://use.typekit.net/af/7a7e75/00000000000000003b9afbb9/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff"), url("https://use.typekit.net/af/7a7e75/00000000000000003b9afbb9/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("opentype");
+    font-display: auto;
+    font-style: normal;
+    font-weight: 300;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: "azo-sans-web";
+    src: url("https://use.typekit.net/af/9dc3b1/000000000000000000013f8f/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"), url("https://use.typekit.net/af/9dc3b1/000000000000000000013f8f/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"), url("https://use.typekit.net/af/9dc3b1/000000000000000000013f8f/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+    font-display: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: "bely-display";
+    src: url("https://use.typekit.net/af/35bea6/00000000000000003b9aea41/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"), url("https://use.typekit.net/af/35bea6/00000000000000003b9aea41/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"), url("https://use.typekit.net/af/35bea6/00000000000000003b9aea41/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+    font-display: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+}
+
+.tk-azo-sans-web {
+    font-family: "azo-sans-web", sans-serif;
+}
+
+.tk-bely-display {
+    font-family: "bely-display", sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: azo-sans-web, Arial, Verdana, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    background-color: #16161f;
+    color: #fff;
+}
+
+html {
+    font-size: 1.11111vw;
+}
+
+.content ul {
+    pointer-events: none !important;
+    cursor: default !important;
+}
+
+ul {
+    list-style: none;
+}
+
+.content ul li {
+    pointer-events: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.content ul li a:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    background: #562fff;
+    transition-duration: .5s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.25, .46, .45, .94);
+    transition-delay: 0s;
+}
+
+.disable, .mask-clone.disable *, .mask-default.disable *, .mask-hidden.disable *, footer, footer .container .mask-clone *, header, header .logo p, main #social .content ul {
+    pointer-events: none !important;
+    cursor: default !important;
+}
+
+article, div, figure, footer, h1, h2, h3, h4, h5, h6, header, li, p, section, span {
+    position: relative;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: geometricPrecision;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: inherit;
+}
+
+article, aside, figure, footer, header, hgroup, nav, section {
+    display: block;
+}
+
+a, abbr, address, article, aside, audio, b, blockquote, body, button, caption, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, input, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, samp, section, select, small, span, strong, sub, sup, table, tbody, td, textarea, tfoot, th, thead, time, tr, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    outline: 0;
+    -webkit-appearance: none;
+}
+
+body ::selection {
+    background-color: #fff;
+}
+
+img, svg {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.nav-hover a {
+    transition-duration: .5s;
+    transition-property: opacity;
+    transition-timing-function: cubic-bezier(.25, .46, .45, .94);
+    transition-delay: 0s;
+}
+
+body ::selection {
+    background-color: #fff;
+}
+
+section {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+strong {
+    font-weight: bold;
+}

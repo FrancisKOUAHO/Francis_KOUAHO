@@ -1,0 +1,99 @@
+#cases {
+    padding: 8.125rem 0 9.85rem;
+}
+
+.bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.bggrid {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.bggrid div:first-child {
+    margin-left: 0;
+}
+
+.bggrid div {
+    width: 0.0625rem;
+    min-width: 1px;
+    max-width: 3px;
+    height: 100%;
+    margin-left: 12.5rem;
+    background-color: hsla(0,0%,100%,.05);
+}
+
+#cases .container {
+    left: 50%;
+    -ms-flex-item-align: start;
+    align-self: start;
+    transform: translateX(-27vw);
+}
+
+#cases .container article {
+    padding: 5.78125rem 0;
+    transition-duration: .3s;
+    transition-property: opacity;
+    transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+    transition-delay: 0s;
+}
+
+#cases .container article a {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#cases .container article a {
+    transform-origin: 0 50%;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    animation: text-glitch 1.5s ease-in-out infinite;
+}
+
+#cases .container article a {
+    font-family: bely-display, Arial, Verdana, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 6.25rem;
+    margin: -0.12em 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+#cases .container article a>span {
+    padding: 0 0 2px 2px;
+    display: inherit;
+    overflow: hidden;
+    margin: -0.6135rem 0 -0.8rem;
+}
+
+#cases .container article .info {
+    position: absolute;
+    width: 11.95rem;
+}
+
+#cases .container article .info .separator {
+    width: 0;
+    height: 1px;
+    background-color: #fff;
+    margin: 2.7rem 0 1.85rem;
+    transition-duration: .3s;
+    transition-property: width;
+    transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+    transition-delay: 0s;
+}

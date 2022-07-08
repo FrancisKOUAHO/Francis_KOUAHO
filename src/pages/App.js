@@ -1,9 +1,25 @@
-function App() {
-  return (
-    <div className="App">
-      <h1>NONO</h1>
-    </div>
-  );
+import Home from "../components/Home";
+import About from "../components/About";
+import {ScrollContainer} from "react-scroll-motion";
+import Contact from "../components/Contact";
+import "../assets/styles/App.css"
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+
+
+const App = () => {
+    return (
+        <>
+            <Header/>
+            <ScrollContainer>
+                <Home/>
+                <About/>
+                <Contact/>
+            </ScrollContainer>
+            <Footer/>
+        </>
+    )
 }
+
 
 export default App;
