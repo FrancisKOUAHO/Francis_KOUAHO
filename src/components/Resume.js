@@ -1,8 +1,32 @@
 import "../assets/styles/Resume.css"
+import {ScrollTrigger} from "gsap/ScrollTrigger";
+import {useEffect, useRef} from "react";
+import {gsap} from "gsap";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Resume = () => {
+
+    const AnimateScrollingResume = useRef(null);
+
+    useEffect(()=>{
+        gsap.to(AnimateScrollingResume.current, {
+            scrollTrigger: {
+                scrub: 1,
+                trigger: AnimateScrollingResume.current,
+                start: "-190% top",
+                onEnter: () => console.log('Enter'),
+                onLeave: () => console.log('Leave'),
+                onEnterBack: () => console.log('Enter back'),
+                onLeaveBack: () => console.log('All the way back'),
+                //markers: "true"
+            },
+            bottom: 390
+        })
+    })
+
     return (
-        <section className="resume-list">
+        <section className="resume-list" ref={AnimateScrollingResume}>
             <article>
                 <ul>
                     <li><strong>UXMC</strong> (UX Master Certified) by the <strong>Nielsen Norman Group</strong>,

@@ -3,7 +3,9 @@
     font-weight: 300;
     font-style: normal;
     font-size: 1rem;
-    margin-bottom: 10.75rem;
+    /*margin-bottom: 10.75rem;*/
+    position: relative;
+    bottom: 5rem;
 }
 
 .resume-list article {
