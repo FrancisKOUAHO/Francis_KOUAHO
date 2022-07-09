@@ -14,7 +14,7 @@ const Resume = () => {
             scrollTrigger: {
                 scrub: 1,
                 trigger: AnimateScrollingResume.current,
-                start: "-190% top",
+                start: "-130% top",
                 onEnter: () => console.log('Enter'),
                 onLeave: () => console.log('Leave'),
                 onEnterBack: () => console.log('Enter back'),
@@ -29,21 +29,27 @@ const Resume = () => {
         <section className="resume-list" ref={AnimateScrollingResume}>
             <article>
                 <ul>
-                    <li><strong>UXMC</strong> (UX Master Certified) by the <strong>Nielsen Norman Group</strong>,
-                        with
-                        specialisations in Interaction and Mobile Design.
+                    <li><strong>Bac +5</strong> (Master Manager en Ingénierie Informatique (M2i) MSc Lead Dev) Diplôme
+                        délivré par <strong>CCI Paris Île-de-France/ESIEE-IT, reconnu par l’Etat</strong>,
                     </li>
-                    <li><strong>Led the design</strong> and <strong>teams of designers</strong> on a range of
-                        products and
-                        startups.
+                    <li>Je dirigé<strong>la conception de l’application Let’sGo.</strong> et <strong>l'équipes de
+                        développeur</strong> de
+                        l'application guide urbain
                     </li>
                 </ul>
                 <ul>
-                    <li>Passionate about <strong>immersive design</strong> and <strong>connected
-                        devices</strong> (AR /
-                        VR, automotive, aviation, etc).
+
+                    <li>Passionné de nouvelles technologies, <strong> à travers mes divers codes, j'exprime ma
+                        créativité,</strong> et <strong>aussi passionné par la danse.</strong> (danseur profesionnel)
                     </li>
-                    <li>Endorsed by TechCity UK for the <strong>Exceptional Talent Visa</strong> in 2016.</li>
+                    <li>
+                        Danseur Professionnel, tournée américaine <strong>“Breakin’ Convention” (2017)</strong> qui fut
+                        l’occasion de me
+                        produire dans les plus prestigieuses scènes américaines. <strong>(Apollo theater (Harlem),
+                        Adrienne
+                        Arsht Center (Miami), Sadler wells (London), La Place (Paris), Palace of Fine Arts (San
+                        Francisco), Belk Theater (Charlotte), Belco Theater (Denver))</strong>
+                    </li>
                 </ul>
             </article>
         </section>

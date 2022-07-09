@@ -14,7 +14,7 @@ const Clients = () => {
             scrollTrigger: {
                 scrub: 1,
                 trigger: AnimateScrollingClient.current,
-                start: "-190% top",
+                start: "-280% top",
                 onEnter: () => console.log('Enter'),
                 onLeave: () => console.log('Leave'),
                 onEnterBack: () => console.log('Enter back'),
