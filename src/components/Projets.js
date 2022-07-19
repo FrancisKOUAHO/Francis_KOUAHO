@@ -1,48 +1,44 @@
 import "../assets/styles/Projets.css"
-import {stockData} from "../data";
-/*import {useEffect, useRef} from "react";
+import {stockData} from "../config/data";
+import {useEffect, useRef} from "react";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 import {gsap} from "gsap";
 
-gsap.registerPlugin(ScrollTrigger);*/
+gsap.registerPlugin(ScrollTrigger);
 
 const Projets = () => {
 
-    /*const AnimateScrollingProjet = useRef(null);
+    const revealRefs = useRef([])
+
+    revealRefs.current = []
+
+    const addToRefs = (item) => {
+        if (item && !revealRefs.current.includes(item)) {
+            revealRefs.current.push(item)
+        }
+        console.log(revealRefs.current)
+    }
 
     useEffect(() => {
-        gsap.to(AnimateScrollingProjet.current, {
-            scrollTrigger: {
-                scrub: 1,
-                trigger: AnimateScrollingProjet.current,
-                start: "-35% top",
-                onEnter: () => console.log('Enter'),
-                onLeave: () => console.log('Leave'),
-                onEnterBack: () => console.log('Enter back'),
-                onLeaveBack: () => console.log('All the way back'),
-                //markers: "true"
-            },
-            bottom: 500
+        revealRefs.current.forEach((item, index) => {
+            gsap.to(item, {
+                scrollTrigger: {
+                    scrub: 1,
+                    id: `${index + 1}`,
+                    start: "top 100%",
+                    end: "bottom 0%",
+                    trigger: item,
+                    toggleActions: "play none none reverse",
+                    //markers: true
+                },
+                top: 20,
+                paused: true,
+                reversed: true,
+                yPercent: 0
+            })
         })
-    })
+    }, [])
 
-    const AnimateScrollingProjet_2 = useRef(null);
-
-    useEffect(() => {
-        gsap.to(AnimateScrollingProjet_2.current, {
-            scrollTrigger: {
-                scrub: 1,
-                trigger: AnimateScrollingProjet_2.current,
-                start: "-130% top",
-                onEnter: () => console.log('Enter'),
-                onLeave: () => console.log('Leave'),
-                onEnterBack: () => console.log('Enter back'),
-                onLeaveBack: () => console.log('All the way back'),
-                markers: "true"
-            },
-            bottom: 1000
-        })
-    })*/
 
     return (
         <section id="cases" className="">
@@ -55,17 +51,17 @@ const Projets = () => {
             </div>*/}
             <div className="container">
                 {
-                    stockData.map((data, index) => {
+                    stockData.map(({index, companyUn, companyTwo}) => {
                         return (
-                            <article key={index}>
+                            <article key={index} ref={addToRefs}>
                                 <a href="case/frl" title="Facebook Reality Labs" draggable="false"
                                    data-text="Facebook Reality Labs">
                         <span>
-                            <span>{data.companyUn}</span>
+                            <span>{companyUn}</span>
                             <span>&#x202F;</span>
                         </span>
                                     <span>
-                            <span>{data.companyTwo}</span>
+                            <span>{companyTwo}</span>
                         </span>
                                 </a>
                                 <div className="info">

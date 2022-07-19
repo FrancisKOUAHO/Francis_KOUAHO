@@ -15,11 +15,6 @@ const Bio = () => {
                 scrub: 1,
                 trigger: AnimateScrollingBio.current,
                 start: "-200% top",
-                onEnter: () => console.log('Enter'),
-                onLeave: () => console.log('Leave'),
-                onEnterBack: () => console.log('Enter back'),
-                onLeaveBack: () => console.log('All the way back'),
-                //markers: "true"
             },
             duration: 1,
             bottom: 300

@@ -17,11 +17,6 @@ const ScrollingTitle = () => {
                 scrub: 1,
                 trigger: AnimateScrollingTitle.current,
                 start: "90% bottom",
-                onEnter: () => console.log('Enter'),
-                onLeave: () => console.log('Leave'),
-                onEnterBack: () => console.log('Enter back'),
-                onLeaveBack: () => console.log('All the way back'),
-                //markers: "true"
             },
             duration: 10,
             bottom: 100

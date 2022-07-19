@@ -15,11 +15,6 @@ const Resume = () => {
                 scrub: 1,
                 trigger: AnimateScrollingResume.current,
                 start: "-130% top",
-                onEnter: () => console.log('Enter'),
-                onLeave: () => console.log('Leave'),
-                onEnterBack: () => console.log('Enter back'),
-                onLeaveBack: () => console.log('All the way back'),
-                //markers: "true"
             },
             bottom: 390
         })
