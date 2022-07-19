@@ -1,22 +1,21 @@
 .bio {
-    width: 48.125rem;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    margin-top: 6.85rem;
+  width: 48.125rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-top: 6.85rem;
 }
 
 .bio p {
-    width: 50%;
-    font-family: azo-sans-web, Arial, Verdana, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 1.4rem;
-    line-height: 2.5rem;
+  width: 50%;
+  font-family: azo-sans-web, Arial, Verdana, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
 }
-
