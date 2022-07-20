@@ -39,8 +39,7 @@ const Header = () => {
             href="#"
             draggable="false"
             title="Contact"
-            className="transform-header"
-          >
+            className="transform-header">
             Contact
           </a>
           <a href="#" draggable="false" title="Resume" target="_blank" className="transform-header">

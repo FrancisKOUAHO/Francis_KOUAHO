@@ -1,10 +1,10 @@
-import '../assets/styles/Footer.css';
-import Linkedin from '../assets/icons/linkedin-square-logo-svgrepo-com.svg';
-import Email from '../assets/icons/mail-svgrepo-com.svg';
+import '../assets/styles/FooterProject.css';
+import Linkedin from '../assets/icons/linkedin-footer-project.svg';
+import Email from '../assets/icons/mail-project.svg';
 
-const Footer = () => {
+const FooterProject = () => {
   return (
-    <footer className="footer">
+    <footer className="footer--project">
       <div className="container">
         <div className="mask-hidden disable">
           <p>
@@ -68,4 +68,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default FooterProject;

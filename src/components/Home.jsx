@@ -4,7 +4,8 @@ import '../assets/styles/Projets.css';
 import { useEffect, useRef } from 'react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { gsap } from 'gsap';
-import { stockData } from '../config/data';
+import { projects } from '../config/data';
+import { Link } from 'react-router-dom';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -53,23 +54,23 @@ const Home = () => {
                 <div></div>
             </div>*/}
           <div className="container">
-            {stockData.map(({ index, companyUn, companyTwo }) => {
+            {projects.map((project, index) => {
               return (
                 <article key={index} ref={addToRefs}>
-                  <a
-                    href="case/frl"
-                    title="Facebook Reality Labs"
+                  <Link
+                    to={`/project/${project.company}`}
+                    state={project}
+                    title={project.company}
                     draggable="false"
-                    data-text="Facebook Reality Labs"
-                  >
+                    data-text={project.company}>
                     <span>
-                      <span>{companyUn}</span>
+                      <span>{project.companyUn}</span>
                       <span>&#x202F;</span>
                     </span>
                     <span>
-                      <span>{companyTwo}</span>
+                      <span>{project.companyTwo}</span>
                     </span>
-                  </a>
+                  </Link>
                   <div className="info">
                     <div className="separator"></div>
                     <p>Conception d’un site pour la commecerlisation de produit Traiteur.</p>

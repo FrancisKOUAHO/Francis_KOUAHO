@@ -1,21 +1,16 @@
-import Home from '../components/Home';
-import About from '../components/About';
-import { ScrollContainer } from 'react-scroll-motion';
-import Contact from '../components/Contact';
-import '../assets/styles/App.css';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Project from './project';
+import Accueil from './Accueil';
 
 const App = () => {
   return (
     <>
-      <Header />
-      <ScrollContainer>
-        <Home />
-        <About />
-        <Contact />
-      </ScrollContainer>
-      <Footer />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Accueil />} />
+          <Route path="/project/:projectId" element={<Project />} />
+        </Routes>
+      </Router>
     </>
   );
 };
