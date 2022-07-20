@@ -1,6 +1,6 @@
-import '../assets/styles/FooterProject.css';
-import Linkedin from '../assets/icons/linkedin-footer-project.svg';
-import Email from '../assets/icons/mail-project.svg';
+import "../assets/styles/FooterProject.css";
+import Linkedin from "../assets/icons/linkedin-footer-project.svg";
+import Email from "../assets/icons/mail-project.svg";
 
 const FooterProject = () => {
   return (
@@ -24,7 +24,7 @@ const FooterProject = () => {
             </a>
           </nav>
         </div>
-        <div className="mask-default" style={{ height: '100%' }}>
+        <div className="mask-default" style={{ height: "100%" }}>
           <p>
             <span className="transform-footer">Contact</span>
           </p>
@@ -48,7 +48,7 @@ const FooterProject = () => {
             </a>
           </nav>
         </div>
-        <div className="mask-clone" style={{ height: '0%', opacity: '1' }}>
+        <div className="mask-clone" style={{ height: "0%", opacity: "1" }}>
           <div className="container-mask">
             <p>
               <span>Contact</span>

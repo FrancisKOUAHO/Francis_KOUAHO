@@ -1,11 +1,11 @@
-import { ScrollPage } from 'react-scroll-motion';
-import '../assets/styles/Home.css';
-import '../assets/styles/Projets.css';
-import { useEffect, useRef } from 'react';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { gsap } from 'gsap';
-import { projects } from '../config/data';
-import { Link } from 'react-router-dom';
+import { ScrollPage } from "react-scroll-motion";
+import "../assets/styles/Home.css";
+import "../assets/styles/Projets.css";
+import { useEffect, useRef } from "react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { gsap } from "gsap";
+import { projects } from "../config/data";
+import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -28,10 +28,10 @@ const Home = () => {
         scrollTrigger: {
           scrub: 1,
           id: `${index + 1}`,
-          start: 'top 100%',
-          end: 'bottom 0%',
+          start: "top 100%",
+          end: "bottom 0%",
           trigger: item,
-          toggleActions: 'play none none reverse'
+          toggleActions: "play none none reverse"
           //markers: true
         },
         top: 20,
@@ -71,7 +71,7 @@ const Home = () => {
                       <span>{project.companyTwo}</span>
                     </span>
                   </Link>
-                  <div className="info">
+                  <div className="info" style={{ display: "none" }}>
                     <div className="separator"></div>
                     <p>Conception d’un site pour la commecerlisation de produit Traiteur.</p>
                   </div>
