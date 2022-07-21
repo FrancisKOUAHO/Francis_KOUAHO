@@ -1,7 +1,7 @@
-import '../assets/styles/ScrollingTitle.css';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { useEffect, useRef } from 'react';
+import "../assets/styles/ScrollingTitle.css";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useEffect, useRef } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -13,7 +13,7 @@ const ScrollingTitle = () => {
       scrollTrigger: {
         scrub: 1,
         trigger: AnimateScrollingTitle.current,
-        start: '90% bottom'
+        start: "90% bottom"
       },
       duration: 10,
       bottom: 100

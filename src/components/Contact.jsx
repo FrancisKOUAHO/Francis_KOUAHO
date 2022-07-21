@@ -1,8 +1,8 @@
-import { ScrollPage } from 'react-scroll-motion';
-import '../assets/styles/Contact.css';
-import Linkedin from '../assets/icons/linkedin.svg';
-import Email from '../assets/icons/mail.svg';
-import Document from '../assets/icons/document.svg';
+import { ScrollPage } from "react-scroll-motion";
+import "../assets/styles/Contact.css";
+import Linkedin from "../assets/icons/linkedin.svg";
+import Email from "../assets/icons/mail.svg";
+import Document from "../assets/icons/document.svg";
 
 const Contact = () => {
   return (

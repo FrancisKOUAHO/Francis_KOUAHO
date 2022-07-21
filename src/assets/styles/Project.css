@@ -1,3 +1,7 @@
+.main {
+    background: #0160eb !important;
+}
+
 .head-cover {
     position: absolute;
     top: 0;
@@ -26,9 +30,10 @@
 }
 
 .info {
-    -ms-flex-align: start;
     align-items: flex-start;
-    margin-top: 5.2rem;
+    margin-top: 31.2rem;
+    color: black;
+    margin-left: 10rem;
 }
 
 .data__slice--company {
@@ -36,7 +41,7 @@
     font-weight: 400;
     font-style: normal;
     font-size: 6.25rem;
-    margin: -0.12em 0;
+    margin: -0.5em 0;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: start;
@@ -46,16 +51,344 @@
     -ms-flex-direction: column;
     flex-direction: column;
     color: black;
-
 }
 
-.info .data__slice--company{
+.info .data__slice--company {
     position: absolute;
     -ms-flex-align: end;
     align-items: flex-end;
     margin-left: unset;
-    right: 60px;
-    top: 18.8rem;
+    left: 30rem;
 }
 
+
+.info h2 {
+    font-family: azo-sans-web, Arial, Verdana, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    width: 32%;
+}
+
+.info ul li h4 {
+    font-family: azo-sans-web, Arial, Verdana, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: .875rem;
+    margin-top: 2rem;
+}
+
+.info ul li p {
+    font-family: azo-sans-web, Arial, Verdana, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: .875rem;
+    line-height: 1.5rem;
+}
+
+.content-blocks {
+    margin-top: 7.45rem;
+}
+
+.content-blocks article.block-default {
+    padding-left: 12.5rem;
+}
+
+.content-blocks article:first-child {
+    margin-top: 0 !important;
+}
+
+.content-blocks article {
+    margin-top: 6.3rem;
+}
+
+.case-section-default, .content-blocks article, .info, .next-case {
+    width: 66.875rem;
+    left: 3.65%;
+    color: #16161f;
+    box-sizing: border-box;
+}
+
+.content-blocks article.block-default:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 7.5rem;
+    height: 1px;
+    background: #0160eb;
+    left: 0;
+    top: 1rem;
+}
+
+.content-blocks article .text {
+    font-family: azo-sans-web, Arial, Verdana, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+.content-blocks article, .info, .next-case {
+    width: 66.875rem;
+    left: 3.65%;
+    color: #16161f;
+    box-sizing: border-box;
+}
+
+.content-blocks article.block-img-legend.legend-l figure {
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+
+.content-blocks article.block-img-legend figure:first-child {
+    margin-top: 0;
+}
+
+.content-blocks article.block-img-legend figure {
+    width: 100%;
+    margin-top: 2rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.content-blocks article.block-img-legend figure img, .content-blocks article.block-img-legend figure video {
+    width: 81.3%;
+    box-shadow: 0 1.25rem 3.75rem rgb(12 12 15 / 5%);
+}
+
+
+.content-blocks article.block-img-legend figure figcaption {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 15.889%;
+    margin-top: 2rem;
+}
+
+.content-blocks article figure figcaption {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin-top: 1.875rem;
+}
+
+.content-blocks article.block-img-legend figure figcaption p:first-child {
+    margin-top: 0;
+}
+
+.content-blocks article.block-img-legend figure figcaption p {
+    font-size: .875rem;
+    line-height: 1.375rem;
+    margin-right: 0;
+    margin-top: 1.45rem;
+}
+
+.content-blocks article figure figcaption p {
+    font-family: azo-sans-web, Arial, Verdana, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    margin-right: 1.875rem;
+}
+
+abbr {
+    text-decoration: none;
+    border-bottom: 1px dashed;
+    cursor: help;
+}
+
+.content-blocks article p > a {
+    text-decoration: underline;
+    transition-duration: .3s;
+    transition-property: color;
+    transition-timing-function: cubic-bezier(.25, .46, .45, .94);
+    transition-delay: 0s;
+}
+
+
+.content-blocks article + article.block-free .single-column {
+    padding-left: 12.6rem;
+    bottom: 6rem;
+    width: 100%;
+}
+
+.content-blocks article.block-free .single-column {
+    width: 30rem;
+}
+
+.content-blocks article.block-free p {
+    font-family: azo-sans-web, Arial, Verdana, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 1.45rem;
+}
+
+.content-blocks article.block-full-img.no-margin-top {
+    margin-top: 0;
+}
+
+.content-blocks article.block-full-img {
+    width: 100%;
+    left: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-direction: row;
+}
+
+.content-blocks article {
+    margin-top: 6.3rem;
+}
+
+.content-blocks article, .info, .next-case {
+    width: 66.875rem;
+    left: 3.65%;
+    color: #16161f;
+    box-sizing: border-box;
+}
+
+.content-blocks article.block-full-img.has-padding figure img, .content-blocks article.block-full-img.has-padding figure video {
+    max-width: 100%;
+}
+
+.content-blocks article.block-full-img.has-padding figure {
+    padding: 6.3rem;
+}
+
+.content-blocks article.block-full-img figure:first-child {
+    margin-top: -13%;
+}
+
+.content-blocks article.block-full-img figure {
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 100%;
+    margin-top: 3rem;
+}
+
+figure, img, svg, video {
+    -webkit-user-drag: none;
+    width: 100%;
+}
+
+figure {
+    margin: 0;
+}
+
+figure {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+
+.next-case {
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding-left: 12.5rem;
+    margin: 12.2rem 0;
+}
+
+.next-case {
+    width: 66.875rem;
+    left: 3.65%;
+    color: #16161f;
+    box-sizing: border-box;
+    margin-top: -7rem;
+}
+
+.next-case:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 7.5rem;
+    height: 1px;
+    background: #16161f;
+    left: 0;
+    top: 1rem;
+}
+
+#case ::selection {
+    background-color: #0160eb;
+    color: #fff;
+}
+
+.next-case a {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.disable, .mask-clone.disable *, .mask-default.disable *, .mask-hidden.disable *, footer, footer .container .mask-clone *, header, header .logo p, main #social .content ul {
+    pointer-events: none!important;
+    cursor: default!important;
+}
+
+.next-case a p {
+    cursor: pointer;
+    white-space: nowrap;
+    font-family: azo-sans-web, Arial, Verdana, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+.enable, footer .container nav a, header .logo, header nav a, .content ul li {
+    pointer-events: auto;
+}
+
+.next-case a h2 {
+    cursor: pointer;
+    font-family: bely-display, Arial, Verdana, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 6.25rem;
+    line-height: 6.25rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    top: -1rem;
+    margin-left: 1.5rem;
+}
+
+.next-case a h2>span:before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 5%;
+    width: 0;
+    height: 5%;
+    background: #16161f;
+    transition-duration: .5s;
+    transition-property: width;
+    transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+    transition-delay: 0s;
+}
 
