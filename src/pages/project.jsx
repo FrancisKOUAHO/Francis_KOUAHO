@@ -35,8 +35,8 @@ const Project = () => {
       <ScrollContainer className="main">
         <ScrollPage page={1} className="case section">
           <section className="container">
-            <img className="head-cover" src={data.image} alt={data.company} />
-            <section className="info" ref={AnimateScrollinginfo}>
+            <img className="head-cover" src={data.image_1} alt={data.company} />
+            <section className="info" ref={AnimateScrollinginfo} style={{ margin: "39rem" }}>
               <h1 className="data__slice--company">
                 <span>
                   <span>{data.companyUn}</span>
@@ -70,7 +70,7 @@ const Project = () => {
             </article>
             <article id="case-block-template" className="block-img-legend legend-l ">
               <figure>
-                <img src={data.image} alt={data.company} title={data.company} />
+                <img src={data.image_2} alt={data.company} title={data.company} />
                 <figcaption>
                   <p>
                     At <abbr title="Facebook Reality Labs">FRL</abbr>, I initially joined as a
@@ -123,7 +123,7 @@ const Project = () => {
             </article>
             <article id="case-block-template" className="block-full-img has-padding no-margin-top">
               <figure>
-                <img src={data.image} alt={data.company} title={data.company} />
+                <img src={data.image_3} alt={data.company} title={data.company} />
               </figure>
             </article>
           </section>
@@ -137,9 +137,9 @@ const Project = () => {
               <div className="text"></div>
             </article>
             <article id="case-block-template" className="block-full-img has-padding no-margin-top">
-              <figure>
-                <img src={data.image} alt={data.company} title={data.company} />
-              </figure>
+              <video width="750" height="500" controls>
+                <source src={data.video} title={data.company} type="video/mp4" />
+              </video>
             </article>
           </section>
         </ScrollPage>

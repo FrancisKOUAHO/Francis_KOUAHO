@@ -6,7 +6,7 @@ import Document from "../assets/icons/document-svgrepo-com.svg";
 
 const ContactProject = () => {
   return (
-    <ScrollPage page={5}>
+    <ScrollPage page={6}>
       <section className="section__contact--project">
         <div className="bg-contact__contact--project">
           <div className="violet-degrade__contact--project"></div>
