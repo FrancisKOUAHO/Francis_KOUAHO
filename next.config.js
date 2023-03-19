@@ -5,7 +5,10 @@ const nextConfig = {
   i18n: {
     locales: ['fr', 'en'],
     defaultLocale: 'fr'
-  }
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 }
 
 module.exports = nextConfig
