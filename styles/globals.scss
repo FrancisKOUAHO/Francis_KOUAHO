@@ -3,11 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* Custom Components */
 @import "styles/reset";
 @import "styles/components/home";
-
 
 /* Custom Responsive Mobile */
 @import "responsive/mobile";
@@ -23,7 +21,7 @@ html {
 
 ::-webkit-scrollbar {
   background: #fbbf24;
-    width: 4px;
+  width: 4px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -34,18 +32,6 @@ html {
 
 ::-webkit-scrollbar-corner {
   background: #fbbf24;
-}
-
-
-.fadeup-enter {
-  opacity: .01;
-  transform: translateY(20px);
-  transition: opacity .2s ease-out, transform .2s ease-out;
-}
-
-.fadeup-enter-done {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 li {
@@ -99,7 +85,6 @@ li {
 }
 
 .ProjectCard_wrapper__R5XKv {
-  //box-shadow: 0 0 34px .5px rgb(251 191 36 / .6);
   transition: transform .4s cubic-bezier(0.215, 0.61, 0.355, 1);
   cursor: pointer;
 

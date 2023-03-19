@@ -1,15 +1,22 @@
 import {NextPage} from "next";
 import {useRouter} from "next/router";
 import Link from 'next/link'
+import {FunctionComponent} from "react";
+
+// creer props pour le header
+
+export type TheHeaderProps =  {
+    className?: string;
+}
 
 
-const TheHeader: NextPage = () => {
+const TheHeader: FunctionComponent<TheHeaderProps> = ({ className}) => {
     const router = useRouter();
 
     const locale = router?.locale;
 
     return (
-        <header>
+        <header className={className}>
             <div className="items-center hidden md:flex py-4">
                 <Link href="/">
                     <img src="/Logo_Portfolio_Francis_Jaune.png" alt="Logo Portfolio Francis Jaune"
