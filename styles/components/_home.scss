@@ -1,0 +1,68 @@
+.tracker {
+  position: fixed;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  z-index: 999999;
+  pointer-events: none;
+  transition: all .15s;
+
+  &.svg {
+    width: 100%;
+    height: 100%;
+
+    &#cursor {
+      position: fixed;
+      pointer-events: none;
+      transform: none;
+      transform-origin: center center;
+      transition: all 300ms ease-out;
+      padding: 2px;
+
+      &.cursor-circle {
+        stroke-dasharray: 500;
+        stroke-dashoffset: 1000;
+        transition: stroke-dashoffset 5s ease-out;
+
+        &.cursor-circle.animate {
+          stroke-dashoffset: 0;
+        }
+      }
+    }
+  }
+}
+
+
+.span-data-tooltip {
+  margin-left: .2rem;
+  font-style: italic;
+  font-size: 13px;
+}
+
+[data-tooltip] {
+  position: relative;
+  cursor: help;
+  text-decoration: underline;
+
+  [data-tooltip]::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    width: 150px;
+    display: block;
+    background: #FFF;
+    padding: 10px;
+    top: -50px;
+    box-shadow: 0 2px 5px #0000008c;
+    border-radius: 3px;
+    text-align: center;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(20px);
+    transition: all .3s cubic-bezier(.4, 0, .2, 1);
+  }
+}
+
+
+
+
