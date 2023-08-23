@@ -30,7 +30,7 @@ const Home: NextPage = () => {
             delay: 0.5,
         });
 
-        // Animation for the skills section
+        /// Animation for the skills section
         tl.from('.fadeup-enter-skills', {
             y: 20,
             stagger: 1,
