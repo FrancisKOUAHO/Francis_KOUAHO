@@ -15,9 +15,9 @@ const Presentation: NextPage = () => {
                 </h1>
                 <p className="header-h2-fluid text-textSecondary sm:mt-4 fadeup-enter fadeup-enter-done"
                    style={{transitionDelay: "500ms"}}><b className="text-textPrimary">
-                    FrontEnd Software Engineer.</b> Autodidacte
-                    depuis l&rsquo;âge de 13 ans, Et actuellement deuxième année master en alternance entant que
-                    FrontEnd Software Engineer chez <a
+                    FrontEnd Software Engineer.</b> Autodidacte depuis 13 ans, récemment
+                    diplômé d&apos;un master, je concrétise ma passion pour le développement en donnant vie à
+                    des solutions frontend créatives et esthétiques pour satisfaire les clients chez <a
                         href="https://www.welcometothejungle.com/fr/companies/mybestpro">MyBestPro</a>.
                 </p>
             </div>

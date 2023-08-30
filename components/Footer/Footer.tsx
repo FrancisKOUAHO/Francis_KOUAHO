@@ -25,7 +25,7 @@ const Footer: NextPage = () => {
                 </div>
             </div>
             <p className="text-base text-textSecondary">built by Francis KOUAHO</p><p
-            className="text-base text-textSecondary">©Copyright 2022 - Francis KOUAHO</p></footer>
+            className="text-base text-textSecondary">©Copyright 2023 - Francis KOUAHO</p></footer>
     )
 }
 

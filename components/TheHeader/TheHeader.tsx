@@ -1,9 +1,6 @@
-import {NextPage} from "next";
 import {useRouter} from "next/router";
 import Link from 'next/link'
 import {FunctionComponent} from "react";
-
-// creer props pour le header
 
 export type TheHeaderProps =  {
     className?: string;

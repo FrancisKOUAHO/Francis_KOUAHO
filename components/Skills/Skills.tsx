@@ -14,7 +14,7 @@ const Skills: NextPage = () => {
         },
     ];
 
-    const frontEndSkills = [
+    const langageSkills = [
         {
             name: "Typescript",
             icon: "typescript-rainbow.svg",
@@ -23,19 +23,30 @@ const Skills: NextPage = () => {
         {
             name: "Javascript",
             icon: "javascript.svg",
+            checked: "text-gradient-primary"
         },
+        {
+            name: "PHP",
+            icon: "PHP.svg",
+            checked: "text-gradient-primary"
+        },
+
+    ];
+
+    const frontEndSkills = [
         {
             name: "ReactJS",
             icon: "react.svg",
+            checked: "text-gradient-primary"
         },
         {
             name: "NextJS",
             icon: "nextjs.svg",
+            checked: "text-gradient-primary"
         },
         {
             name: "VueJS",
             icon: "vuejs.svg",
-            checked: "text-gradient-primary"
         },
         {
             name: "NuxtJS",
@@ -49,11 +60,11 @@ const Skills: NextPage = () => {
         {
             name: "NodeJS",
             icon: "nodejs.svg",
-            checked: "text-gradient-primary"
         },
         {
-            name: "ExpressJS",
-            icon: "expressjs.svg"
+            name: "AdonisJS",
+            icon: "AdonisJS.svg",
+            checked: "text-gradient-primary"
         },
     ];
 
@@ -61,21 +72,17 @@ const Skills: NextPage = () => {
         {
             name: "MongoDB",
             icon: "mongodb.svg",
+        },
+        {
+            name: "PostgreSQL",
+            icon: "PostgresSQL.svg",
             checked: "text-gradient-primary"
-        },
-        {
-            name: "MySQL",
-            icon: "mysql.svg"
-        },
-        {
-            name: "MariaDB",
-            icon: "mariadb.svg"
         },
     ];
 
     const otherSkills = [
         {
-            name: "Git & Github",
+            name: "GitLab & GitHub",
             icon: "git.svg",
             checked: "text-gradient-primary"
         },
@@ -84,18 +91,19 @@ const Skills: NextPage = () => {
             icon: "jest.svg"
         },
         {
+            name: "Japa",
+            icon: "jest.svg",
+            checked: "text-gradient-primary"
+        },
+        {
             name: "Vitest",
             icon: "vitest.svg",
             checked: "text-gradient-primary"
         },
         {
-            name: "Firebase",
-            icon: "firebase.svg",
-            checked: "text-gradient-primary"
-        },
-        {
             name: "Docker",
-            icon: "docker.svg"
+            icon: "docker.svg",
+            checked: "text-gradient-primary"
         },
     ];
 
@@ -107,16 +115,17 @@ const Skills: NextPage = () => {
                 <div className="flex justify-between">
                     <div>
                         <h3 className="text-2xl font-bold fadeup-enter text-white fadeup-enter-done"
-                            style={{transitionDelay: "100ms"}}>Design</h3>
+                            style={{transitionDelay: "100ms"}}>Languages</h3>
                         {
-                            designSkills.map((skill, index) => {
+                            langageSkills.map((skill, index) => {
                                 return (
                                     <ul className="flex flex-col gap-2 mt-4" key={index}>
                                         <span className="fadeup-enter fadeup-enter-done"
                                               style={{transitionDelay: "120ms"}}>
                                             <li className="flex items-center gap-2 text-lg">
                                             <span className="SkillsList_rainbowIcon__bSZdk">
-                                                <img src={`/icon/${skill.icon}`} alt="Figma"/></span>
+                                                <img src={`/icon/${skill.icon}`} alt="Figma" width={20}
+                                                     height={20}/></span>
                                             <span className={`${skill.checked} font-bold`}>{skill.name}</span>
                                             </li>
                                         </span>
@@ -137,7 +146,8 @@ const Skills: NextPage = () => {
                                               style={{transitionDelay: "120ms"}}>
                                             <li className="flex items-center gap-2 text-lg">
                                             <span className="SkillsList_rainbowIcon__bSZdk">
-                                                <img src={`/icon/${skill.icon}`} alt="Figma"/></span>
+                                                <img src={`/icon/${skill.icon}`} alt="Figma" width={20}
+                                                     height={20}/></span>
                                             <span className={`${skill.checked} font-bold`}>{skill.name}</span>
                                             </li>
                                         </span>
@@ -159,7 +169,8 @@ const Skills: NextPage = () => {
                                               style={{transitionDelay: "120ms"}}>
                                             <li className="flex items-center gap-2 text-lg">
                                             <span className="SkillsList_rainbowIcon__bSZdk">
-                                                <img src={`/icon/${skill.icon}`} alt="Figma"/></span>
+                                                <img src={`/icon/${skill.icon}`} alt="Figma" width={20}
+                                                     height={20}/></span>
                                             <span className={`${skill.checked} font-bold`}>{skill.name}</span>
                                             </li>
                                         </span>
@@ -181,7 +192,30 @@ const Skills: NextPage = () => {
                                               style={{transitionDelay: "120ms"}}>
                                             <li className="flex items-center gap-2 text-lg">
                                             <span className="SkillsList_rainbowIcon__bSZdk">
-                                                <img src={`/icon/${skill.icon}`} alt="Figma"/></span>
+                                                <img src={`/icon/${skill.icon}`} alt="Figma" width={20}
+                                                     height={20}/></span>
+                                            <span className={`${skill.checked} font-bold`}>{skill.name}</span>
+                                            </li>
+                                        </span>
+                                    </ul>
+                                )
+                            })
+                        }
+                    </div>
+
+                    <div>
+                        <h3 className="text-2xl font-bold fadeup-enter text-white fadeup-enter-done"
+                            style={{transitionDelay: "100ms"}}>Design</h3>
+                        {
+                            designSkills.map((skill, index) => {
+                                return (
+                                    <ul className="flex flex-col gap-2 mt-4" key={index}>
+                                        <span className="fadeup-enter fadeup-enter-done"
+                                              style={{transitionDelay: "120ms"}}>
+                                            <li className="flex items-center gap-2 text-lg">
+                                            <span className="SkillsList_rainbowIcon__bSZdk">
+                                                <img src={`/icon/${skill.icon}`} alt="Figma" width={20}
+                                                     height={20}/></span>
                                             <span className={`${skill.checked} font-bold`}>{skill.name}</span>
                                             </li>
                                         </span>
@@ -202,7 +236,8 @@ const Skills: NextPage = () => {
                                               style={{transitionDelay: "120ms"}}>
                                             <li className="flex items-center gap-2 text-lg">
                                             <span className="SkillsList_rainbowIcon__bSZdk">
-                                                <img src={`/icon/${skill.icon}`} alt="Figma"/></span>
+                                                <img src={`/icon/${skill.icon}`} alt="Figma" width={20}
+                                                     height={20}/></span>
                                             <span className={`${skill.checked} font-bold`}>{skill.name}</span>
                                             </li>
                                         </span>
