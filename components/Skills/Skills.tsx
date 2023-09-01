@@ -37,12 +37,12 @@ const Skills: NextPage = () => {
         {
             name: "ReactJS",
             icon: "react.svg",
-            checked: "text-gradient-primary"
+            checked: "text-gradient-primary",
         },
         {
             name: "NextJS",
             icon: "nextjs.svg",
-            checked: "text-gradient-primary"
+            checked: "text-gradient-primary",
         },
         {
             name: "VueJS",
