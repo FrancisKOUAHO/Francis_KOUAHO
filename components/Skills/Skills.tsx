@@ -45,6 +45,11 @@ const Skills: NextPage = () => {
             checked: "text-gradient-primary",
         },
         {
+            name: "Angular",
+            icon: "Angular.svg",
+            checked: "text-gradient-primary",
+        },
+        {
             name: "VueJS",
             icon: "vuejs.svg",
         },
